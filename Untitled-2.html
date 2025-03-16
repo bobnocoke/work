@@ -1,0 +1,73 @@
+<div class="media-container">
+    <img src="dolphin.jpg" alt="示例图片" class="resized-image">
+    <div class="divider"></div>
+    <div class="styled-caption">
+        <p class="main-title">保护海洋</p>
+        <p class="description">生物累积性（Bioaccumulation）系指生物食用或体表吸收生活环境中的某些化学物质，这些物质没办法被代谢，便累积于生物体内，经由食物链中各阶层消费者的食性关系而累积，越高级消费者的体内其累积浓度越高的现象。</p>
+    </div>
+</div>
+
+<style>
+.media-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.resized-image {
+    width: 60%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.divider {
+    width: 80%;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #8B4513, transparent);
+    margin: 15px auto;
+}
+
+.styled-caption {
+    width: 100%;
+    text-align: center;
+}
+
+.styled-caption p.main-title {
+    font-family: "LiSu", "隶书", serif;
+    font-size: 1.8em;
+    color: #333;
+    margin: 0 0 15px 0;
+    text-align: center;
+}
+
+.styled-caption p.description {
+    font-size: 10.5pt;
+    line-height: 1.6;
+    color: #333;
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+/* 移动端适配 */
+@media screen and (max-width: 768px) {
+    .resized-image {
+        width: 90%;
+    }
+    
+    .divider {
+        width: 90%;
+    }
+    
+    .styled-caption p.description {
+        max-width: 95%;
+        font-size: 10.5pt;
+    }
+}
+</style>
